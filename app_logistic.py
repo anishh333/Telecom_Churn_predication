@@ -140,7 +140,7 @@ if st.button("Predict Churn"):
 
     if prediction == 1:
         st.markdown(
-            f"<div class='result-box safe'>"
+            f"<div class='result-box danger'>"
             f"<h4>Customer is likely to Discontinue with the company</h4>"
             f"<p>Probability: {probability:.2f}</p>"
             f"</div>",
@@ -148,7 +148,7 @@ if st.button("Predict Churn"):
         )
     else:
         st.markdown(
-            f"<div class='result-box danger'>"
+            f"<div class='result-box safe'>"
             f"<h4>Customer is  likely to continue with the company</h4>"
             f"<p>Probability: {probability:.2f}</p>"
             f"</div>",

@@ -1,0 +1,172 @@
+/* =========================================================
+   GLOBAL STYLING
+   ========================================================= */
+body {
+    background: linear-gradient(135deg, #0f172a, #020617);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    color: #e5e7eb;
+}
+
+/* =========================================================
+   TITLE / HEADER
+   ========================================================= */
+.title-card {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    padding: 26px;
+    border-radius: 16px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 32px;
+    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.45);
+}
+
+.title-card h1 {
+    margin-bottom: 6px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.title-card p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* =========================================================
+   SECTION HEADERS
+   ========================================================= */
+h2, h3 {
+    color: #e5e7eb;
+    margin-top: 28px;
+    font-weight: 600;
+}
+
+/* =========================================================
+   DATAFRAME
+   ========================================================= */
+.stDataFrame {
+    background-color: #020617;
+    border-radius: 14px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+/* =========================================================
+   METRIC CARDS
+   ========================================================= */
+[data-testid="stMetric"] {
+    background: linear-gradient(135deg, #020617, #020617);
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.45);
+    border-left: 6px solid #3b82f6;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+[data-testid="stMetricValue"] {
+    color: #f9fafb;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* =========================================================
+   ALERTS
+   ========================================================= */
+.stAlert {
+    border-radius: 12px;
+    background-color: #020617;
+    color: #e5e7eb;
+    border-left: 6px solid #22c55e;
+}
+
+/* =========================================================
+   TEXT OUTPUT (Classification Report)
+   ========================================================= */
+pre {
+    background-color: #020617;
+    color: #e5e7eb;
+    padding: 16px;
+    border-radius: 12px;
+    border-left: 6px solid #3b82f6;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   INPUT CARD
+   ========================================================= */
+.input-card {
+    background-color: #020617;
+    padding: 22px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.45);
+    margin-top: 20px;
+}
+
+.input-card h4 {
+    color: #60a5fa;
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+/* =========================================================
+   PREDICTION RESULTS
+   ========================================================= */
+.result-box {
+    margin-top: 26px;
+    padding: 22px;
+    border-radius: 16px;
+    font-weight: 600;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* --- Churn Risk --- */
+.result-box.danger {
+    background: linear-gradient(135deg, #450a0a, #7f1d1d);
+    color: #fee2e2;
+    border-left: 7px solid #ef4444;
+}
+
+/* --- Safe Customer --- */
+.result-box.safe {
+    background: linear-gradient(135deg, #022c22, #064e3b);
+    color: #d1fae5;
+    border-left: 7px solid #22c55e;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+.stButton > button {
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    color: #ffffff;
+    border-radius: 12px;
+    font-weight: 600;
+    padding: 10px 16px;
+    border: none;
+    box-shadow: 0px 6px 16px rgba(37, 99, 235, 0.5);
+    transition: all 0.25s ease;
+}
+
+.stButton > button:hover {
+    background: linear-gradient(135deg, #1e40af, #1e3a8a);
+    transform: translateY(-1px);
+    box-shadow: 0px 8px 22px rgba(37, 99, 235, 0.65);
+}
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
